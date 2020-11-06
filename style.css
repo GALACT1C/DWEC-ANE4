@@ -1,35 +1,60 @@
-body{
-  background-color: grey;
-  font-size: 20px;
-}
-button{
-  padding: 2em;
-  background-color: green;
+.capaButton{
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-@media screen and (min-width: 641px){
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(154, 184, 214);
+button{
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+      display: flex;
+      font-size: 20px;
+      flex-direction: column;
+      background-color: rgb(122, 122, 122);
   }
-  
-  .flex-container > div {
-    width: 500px;
-    margin: 10px;
-    text-align: center;
-    font-size: 15px;
-    text-align: center;
-  }
-  .flex-container > button {
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
+  button{
+      padding: 2em;
+      background-color: rgb(7, 168, 7);
+      border-radius: 0px;
   }
 }
 
-@media screen and (min-width: 1281px){
+@media only screen and (min-width: 641px) and (max-width:1280px) {
+  body {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(212, 209, 209);
+  }
+  button{
+      cursor:pointer;
+  }
+} 
 
+@media only screen and (min-width:1281px){
+  body {
+      display: flex;
+      flex-direction: column-reverse;
+      color: white;
+      background-color: black;
+  }
+  .capaPrincipal{
+      flex: 25%;
+  }
+  #primeraCapa{
+      flex: 50%;
+  }
+}
+
+@media print{
+  .capaButton{
+      display: none;
+  }
+  body{
+      background-color: none;
+      font-size: 14px;
+      font-family: serif;
+  }
 }
