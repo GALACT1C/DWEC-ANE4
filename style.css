@@ -1,0 +1,35 @@
+body{
+  background-color: grey;
+  font-size: 20px;
+}
+button{
+  padding: 2em;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 641px){
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(154, 184, 214);
+  }
+  
+  .flex-container > div {
+    width: 500px;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    text-align: center;
+  }
+  .flex-container > button {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1281px){
+
+}
